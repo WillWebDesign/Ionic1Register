@@ -1,0 +1,8 @@
+/* Empty. Add your own CSS if you like */
+.ng-invalid.ng-dirty {
+  color: #D9230F !important;
+}
+
+.ng-valid.ng-dirty {
+  color: #468847 !important;
+}

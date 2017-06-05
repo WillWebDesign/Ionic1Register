@@ -1,0 +1,40 @@
+<ion-view view-title="Registro">
+  <ion-content class="padding">
+    <h2>Prueba</h2>
+    <form name="formRegistro" role="form" ng-submit="formRegistro.$valid && register()" novalidate>
+      <div class="list">
+        <label class="form item item-input item-stacked-label">
+          <span class="input-label">Documento</span>
+          <input type="number" ng-model="registro.Documento" required>
+        </label>
+        <label class="form item item-input item-stacked-label">
+          <span class="input-label">Id estacionamiento</span>
+          <input type="number" ng-model="registro.IdEstacionamiento" required>
+        </label>
+        <label class="form item item-input item-stacked-label">
+          <span class="input-label">Nombres</span>
+          <input type="text" ng-model="registro.Nombres" required>
+        </label>
+        <label class="form item item-input item-stacked-label">
+          <span class="input-label">Apellidos</span>
+          <input type="text" ng-model="registro.Apellidos" required>
+        </label>
+        <label class="form item item-input item-stacked-label">
+          <span class="input-label">Usuario</span>
+          <input type="text" ng-model="registro.Usuario" required>
+        </label>
+        <label class="form item item-input item-stacked-label">
+          <span class="input-label">Clave</span>
+          <input type="password" ng-model="registro.Clave" required>
+        </label>
+        <label class="form item item-input item-stacked-label">
+          <span class="input-label">Cargo</span>
+          <input type="text" ng-model="registro.Cargo" required>
+        </label>
+      </div>
+      <button type="submit" ng-show="formRegistro.$valid" class="button button-block button-positive">
+        Registarse
+      </button>
+    </form>
+  </ion-content>
+</ion-view>
