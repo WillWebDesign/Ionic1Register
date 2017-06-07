@@ -1,6 +1,34 @@
+/**
+ * @ngdoc controller
+ * @name App Prueba
+ * @function
+ *
+ * @description
+ * "App de prueba" prueba de consumo de servicio para registro de usuarios
+  - Validacion campos formulario,
+  - Transformacion y envio de los datos para el correcto funcionamiento,
+  - Mensaje de confirmacion
+*/
 
+/**
+ * @ngdoc object
+ * @name app.object:app
+ * @function
+ * @requires ionic
+ * @requires ngCordova
+ * @requires ngCordovaOauth
+ *
+ * @description
+ * Se cargan todos los componentes necesarios para el correcto funcionamiento de la aplicación
+*/
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
-
+/**
+  * @ngdoc function
+  * @name run
+  * @methodOf app.object:app
+  * @param {Object} $ionicPlatform - http://ionicframework.com/docs/api/service/$ionicPlatform
+  * @description Esta función se encarga de que segun la plataforma se muestre correctamente el keyboard del dispositivo.
+  */
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
 
@@ -13,7 +41,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   });
 })
-
+/**
+  * @ngdoc function
+  * @name config
+  * @methodOf app.object:app
+  * @param {Object} $state - https://github.com/angular-ui/ui-router/wiki
+  * @param {Object} $state - https://github.com/angular-ui/ui-router/wiki
+  * @description Esta función se encarga del ruteo del app a las distintas vistas.
+  */
 .config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider

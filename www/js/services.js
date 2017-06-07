@@ -1,5 +1,12 @@
 angular.module('starter.services', [])
-
+/**
+* @ngdoc function
+* @name starterService
+* @methodOf app.object:app
+* @param {Object} $http - https://docs.angularjs.org/api/ng/service/$http
+* @param {Object} $q - https://docs.angularjs.org/api/ng/service/$q
+* @description Esta función se encarga de resivir la informacion transformala y enviarla al endpoint segun la respuesta que resiva.
+*/
 .factory('starterService',['$http', '$q' ,function($http, $q) {
     function save(data) {
       data.callback = 'null';
